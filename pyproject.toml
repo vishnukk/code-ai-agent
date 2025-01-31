@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "code-ai-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    "vishnuennakkad@gmail.com"
+]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9.0,<3.13"
+fastapi = "0.115.3"
+pydantic = "2.9.2"
+uvicorn = "0.30.6"
+langchain-community = "^0.3.15"
+langchain = "^0.3.15"
+#beautifulsoup4 = "^4.12.3"
+#playwright = "^1.49.1"
+#unstructured = "^0.16.15"
+#langchainhub = "^0.1.21"
+#langchain-openai = "^0.3.2"
+langchain-ollama = "^0.2.2"
+#faiss-cpu = "^1.9.0.post1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+postinstall = "postinstall:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
